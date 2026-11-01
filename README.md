@@ -22,7 +22,7 @@ A console-based Emergency Response and Resource Allocation System built with Cor
 
 ## 📖 Sample Output
 
-```
+```text
 === ResQ MENU ===
 1. Report Emergency
 2. Dispatch Next
@@ -31,18 +31,23 @@ A console-based Emergency Response and Resource Allocation System built with Cor
 5. View History
 6. Exit
 Choose: 1
+
 Location: City Hospital
 Severity (1=HIGH, 2=MEDIUM, 3=LOW): 1
 Type (1=MEDICAL, 2=FIRE, 3=CRIME): 1
-🚨 Reported: [EMG-101] MEDICAL at City Hospital | HIGH | PENDING
+Reported: [EMG-101] MEDICAL at City Hospital | HIGH | PENDING
 
-=== ResQ MENU ===
+Choose: 4
+
+--- Pending Emergencies ---
+[EMG-101] MEDICAL at City Hospital | HIGH | PENDING
+[EMG-102] FIRE at Market Area | LOW | PENDING
+
 Choose: 2
-🚑 Dispatched MEDICAL [AMB-01] to City Hospital for EMG-101
+🚑Dispatched MEDICAL [AMB-01] to City Hospital for EMG-101
 
-=== ResQ MENU ===
 Choose: 3
 Resource ID to free: AMB-01
-✅ Emergency EMG-101 is now RESOLVED.
-✅ Resource AMB-01 is available now.
+Emergency EMG-101 is now RESOLVED.
+Resource AMB-01 is available now.
 ```
